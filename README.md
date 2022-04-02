@@ -9,7 +9,7 @@ This project was lovingly made by [Ava](https://github.com/avayazdan), [Claudia]
 
 ## Project Requirements
 
-This project was built for project three of General Assembly's Full-Stack Software Engineering course. The project aim was to build our own API, utilise our growing knowledge of React as well as connecting backend to frontend for the first time. The project specs allowed us to take inspiration from complex websites/apps that use data such as AirBnb or Facebook, and essentially rebuild it in our own way if we desire.
+This project was built for project three of General Assembly's Full-Stack Software Engineering course. The project aim was to build our a MERN stack website/application with own API, utilise our growing knowledge of React as well as connecting backend to frontend for the first time. The project specs allowed us to take inspiration from complex websites/apps that use data such as AirBnb or Facebook, and essentially rebuild it in our own way if we desire.
 
 ### Table of contents 
 
