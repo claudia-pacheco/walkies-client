@@ -128,6 +128,23 @@ This was data was then handled by the ``onSubmit`` function incorporated in the 
 The function uses ``axios`` to create a POST request to the API so the new user is added. The user is then created in the API and once they login, a access token is generated.
 
 
+If a user clicks on `View Dogs` they will be presented with a list of dogs that have been fetched from the API. Should they wish to know more about a specific one, they can click on the `More About Me` button. This will open a new page displaying just the information from that dog.
+
+
+<img width="1425" alt="Screenshot 2022-06-10 at 15 41 35" src="https://user-images.githubusercontent.com/94257616/173090552-e080b8f3-dd6d-4d42-817d-1d3496cd7cea.png">
+
+This was achieved by linking the id of each dog to a new page. 
+
+<img width="458" alt="Screenshot 2022-06-10 at 15 44 07" src="https://user-images.githubusercontent.com/94257616/173091027-a28b9f8f-3561-4e11-a425-63645b8b557a.png">
+
+As you can see in this screenshot, ``x`` stands for each individual dog that is being mapped onto the page, therefore if we want to grab the ID we use ``x._id``. Our API endpoint for fetching each dog is ``dogs/dogId`` so by using ``useParams`` I was able to share the ID of the dog that's been clicked on from the ``dog`` page to the ``dog/dogId``.
+
+<img width="483" alt="Screenshot 2022-06-10 at 15 44 38" src="https://user-images.githubusercontent.com/94257616/173091102-beaf3835-9825-4d3c-b5d9-072be2fb38f0.png">
+
+I had to deconstruct the `dogId` object so I could easily access the value and use it on the fetching GET request endpoint. Additionally, I had to also include the Authorization headers with the access token (stored in LocalStorage after a user logs in) so they would be authenticated and authorised to see the dogs page.
+
+<img width="1422" alt="Screenshot 2022-06-10 at 16 01 10" src="https://user-images.githubusercontent.com/94257616/173094129-82a9bf2c-5eaa-4b0f-b23e-54150098fee3.png">
+
 ### Styling
 
 Our styling was inspired by colourful and animated websites surrounding our chosen topic. We wanted to make it look modern and easy-to-read. One interesting aspect of our project was that we opted out of using stock photos to using photos of family/friends and ourselves in the Community Stories section in our home page, which subsequently gives our project a more personalised feel. Originally, we had planned to use a styling library, however underestimated how complicated they can actually get! So ultimately we opted for vanilla CSS as to save us some time. For future projects we would aim to implement a styling library for learning and experience purposes. 
