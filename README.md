@@ -1,19 +1,18 @@
-## Project 3 - Walkies 
+## Project 3 - Walkies 🐾
 
-This project was lovingly made by [Ava](https://github.com/avayazdan), [Claudia](https://github.com/claudia-pacheco) and [Laura](https://github.com/laura-arch) as part of our Software Engineering Flex course at General Assembly.
+Walkies is a dog borrowing site, inspired by [borrow my doggy](https://www.borrowmydoggy.com/). 
+It was made by [Ava](https://github.com/avayazdan), [Claudia](https://github.com/claudia-pacheco) and [Laura](https://github.com/laura-arch) as part of our Software Engineering Flex course at General Assembly.
 
 Deployed [here.](https://walkiessei22.netlify.app/)
 
-![kdds](https://user-images.githubusercontent.com/75817925/161390251-1b84f54d-4aca-49df-8641-3e7da6242542.png)
+<img width="1433" alt="Screenshot 2022-06-10 at 15 40 28" src="https://user-images.githubusercontent.com/94257616/173097425-913a1240-7955-44d2-8e39-b4429494a9f0.png">
 
+The project aim was to build a Full Stack MERN app that consumes its own RESTful API. We used React, HTML and CSS for Frontend and MongoDB, Node.js and Express for Backend. 
 
-## Project Requirements
-
-This project was built for project three of General Assembly's Full-Stack Software Engineering course. The project aim was to build our a MERN stack website/application with own API, utilise our growing knowledge of React as well as connecting backend to frontend for the first time. The project specs allowed us to take inspiration from complex websites/apps that use data such as AirBnb or Facebook, and essentially rebuild it in our own way if we desire.
 
 ### Table of contents 
-
-1. Project aims & inspiration 
+ 
+1. Tech Stack
 2. Planning 
 3. Build
 4. Styling
@@ -25,77 +24,37 @@ This project was built for project three of General Assembly's Full-Stack Softwa
 
 The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and we stored our data on the MongoDB Atlas cloud.
 
-## Project aim 
-
-Walkies is a dog borrowing site, inspired by [borrow my doggy](https://www.borrowmydoggy.com/).
-
-The functionality of Walkies includes:
-
-- Register a user
-- Login a user
-- View dogs once you are logged in
-- Create a dog
-- Message the dog's owner to arrange `walkies`!
-
 
 ## Planning 
 
-
-![Untitled-2022-03-31-0020](https://user-images.githubusercontent.com/75817925/161280307-a79a28e1-e83e-4cd6-bba9-64ae7e568f6b.png)
-
-Our planning consisted of mostly discussing ideas and their potential caveats or benefits. Once we agreed on an idea, we researched other websites and their functionality and chose what we would like to implement in our own project. As shown above, we used Excalidraw to wireframe our project. Naturally, as we progressed deeper into our project and realised potential flaws or caveats, elements of our wirefrime were changed or edited to suit the new functionalities or elements.
-A big part of our planning as well as process was using Trello for organisation and predicting our timeline. This helped tremendously with time management and awareness of what needs to be done next during our the process of building our project. 
-
-![Untitled](https://user-images.githubusercontent.com/75817925/161281508-a9f4ac23-2d69-4140-9ad3-8ea52729a37d.png)
+We used Excalidraw to plan and wireframe our website through a Borrower and Owner point of view. We also drafted some Pseudo code to help us approach the initial set up of the app.
+Additionally to that we created a board on Trello to organise and keep track of our timeline. 
+<img src="https://user-images.githubusercontent.com/75817925/161280307-a79a28e1-e83e-4cd6-bba9-64ae7e568f6b.png" >
+<img src="https://user-images.githubusercontent.com/75817925/161281508-a9f4ac23-2d69-4140-9ad3-8ea52729a37d.png">
 
 ## Build
 
 Group project | Timeframe: 2 weeks
 
-The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and we stored our data on the MongoDB Atlas cloud at the end of week one. We started by building our backend/API together as a team, we utilised VScode LiveShare and we pushed to the same main branch during this week. During week two, we switched up our workflow, and started using our own Git branches, the reason for this was because on the frontend we split up individual tasks/components, whereas the backend was built together. 
+The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and the data was stored on the MongoDB Atlas cloud. 
+
+We decided to build the backend together so we could solidify our knowledge with MongoDB. We used the Live Share option on Visual Studio to code along.
+Once we had our Backend completed, we delegated tasks to eachother so we could work on individual Git branches on different components.
+
+The project was split into 2 different Git repositories. Please refer to the backend code [here](https://github.com/claudia-pacheco/walkies-backend).
 
 ### Backend 
 
-Our [backend](https://github.com/claudia-pacheco/walkies-backend) and client were split up in two seperate files and were two seperate Git repositories. We built a CRUD API to let users create dogs/users and to store our User and Dog data. During our process, we didn't use dummy data - rather we opted to upload testing data via apps like Insomnia or Postman. Our backend consists of User schema, Dog schema, middleware for authorization and error handling, a router, and of course, controllers - which held the functions and logic for our API to work. For example: 
+We built a CRUD API to let users (owners) create a profile for their dogs and Borrowers to message Owners about a specific dog to walk. Throughtout the project we didn't seed data, we opted to test it through Postman/Insomnia.
 
-```
-// create / list your dog
+We stayed on track with our wireframe and created a User and Dog Schema.
+<img width="489" alt="Screenshot 2022-06-10 at 16 58 07" src="https://user-images.githubusercontent.com/94257616/173105607-02324bcb-aa41-4c4c-8c8d-5d3664d29618.png">
 
-async function create(req, res, next) {
-  console.log(req)
-  if (!["owner"].includes(req.currentUser.role)) {
-    return res.status(400).json({
-      //     message: "You need to be an owner to create a dog! 🐕",
-    })
-  }
-  const newDog = req.body
-  newDog.createdBy = req.currentUser._id
-  try {
-    const createdDog = await Dog.create(newDog)
-    console.log(createdDog)
-    res.status(201).json(createdDog)
-  } catch (err) {
-    next(err)
-  }
-}
-```
+The use of Mongoose made it easier and neat to link Schemas. For example, we have linked our User schema to the Dog one by referencing the object ID ``type: mongoose.Schema.ObjectId`` to the model ``User``. This was when a dog is created, it will be linked to the owner. This works great in terms of authorisation as it is simple to connect them.
 
-The utilisation of Mongoose made it more simple for us to write the logic for our API and what we require it to do. The built in CRUD related methods, for example: 
+ 
 
-```
-router.route("/dogs")
-  .get(auth, dogsController.index)
-  .post(auth, dogsController.create)
 
-router.route("/dogs/:dogId")
-  .get(auth, dogsController.show)
-  .put(auth, dogsController.update)
-  .delete(auth, dogsController.remove)
-
-router.route("/messages/:dogId")
-  .get(auth, commentscontroller.show)
-  .post(auth, commentscontroller.create)
-  ```
   #### Frontend 
   
   As this is a React app, we followed the methodology and popular conventions of React apps - such as creating **src** folders and **components**. We first began by creating all of our needed components as well as our **App** and **Index** **.js**. We also used **axios** for fetching our API data. 
