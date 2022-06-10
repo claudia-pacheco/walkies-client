@@ -145,24 +145,37 @@ I had to deconstruct the `dogId` object so I could easily access the value and u
 
 <img width="1422" alt="Screenshot 2022-06-10 at 16 01 10" src="https://user-images.githubusercontent.com/94257616/173094129-82a9bf2c-5eaa-4b0f-b23e-54150098fee3.png">
 
-### Styling
+## Styling
 
 Our styling was inspired by colourful and animated websites surrounding our chosen topic. We wanted to make it look modern and easy-to-read. One interesting aspect of our project was that we opted out of using stock photos to using photos of family/friends and ourselves in the Community Stories section in our home page, which subsequently gives our project a more personalised feel. Originally, we had planned to use a styling library, however underestimated how complicated they can actually get! So ultimately we opted for vanilla CSS as to save us some time. For future projects we would aim to implement a styling library for learning and experience purposes. 
 
 
-### Challenges & wins
+## Challenges and Wins
 
-#### Wins
+### Wins
 
-One of our wins was working efficiently as a team, organising effectively and utilising the tools available to us effectively. Another win was accepting kind critisim  from each other on small things that we may have different opinions on, we listened to eachother with respect and no one overuled one another, it could even be argued that we mastered the skill of working efficiently as a team in a short amount of time! Speaking of time - that was another win of ours. We moved with quick pacing fromt the very get go and that could also be down to our efficient organisation methods and skills. 
+One of our wins was working efficiently as a team, organising effectively and utilising the tools available to us effectively. Another win was accepting kind critisim from each other on small things that we may have different opinions on, we listened to eachother with respect and no one overuled one another, it could even be argued that we mastered the skill of working efficiently as a team in a short amount of time! Speaking of time - that was another win of ours. We moved with quick pacing fromt the very get go and that could also be down to our efficient organisation methods and skills. 
 
-#### Challenges 
+A personal win was definitely succesfully feed data into our API from the Register form. This was a new concept for me as previously we had an external API so it was really cool to have our own and it working successfully. 
+Another win was playing around with ``useParams`` and ``LocalStorage``. For the most part, it was successful and we were able to retrieve the correct information without having to place different fetch requests.
+
+### Challenges 
 
 We had a few challanges - such as connecting to MongoDB, deploying our backend without errors and finally (arguably the largest one) uploading our dog data via the frontend to the database successfully. Luckily we had the help of our tutors but we always tried to work on the problem for a couple of hours before asking for help. 
 
-### Future improvements or changes
+I had quite a lot of trouble to initially grab a specific ID from a different component. I kept getting ``undefined`` on the console so it was very pleasant when ``useParams`` worked.
+I wish I had spent some time on styling as I feel like I haven't contributed as much as I would like to.
 
-A Favorites page would be a great addition to our project (adding a dog or a borrower to your favorites, storing them for later). Another improvement would be implementing a chat messenger where users can interact with eachother in real time, or to get an inbox functionality between owners and borrowers. 
+### Future Improvements
+
+Features to add:
+
+- Favorites page would be a great addition to our project (adding a dog or a borrower to your favorites, storing them for later)
+- Implementing a chat messenger where users can interact with eachother in real time, or to get an inbox functionality between owners and borrowers
+
+Bugs to fix:
+
+- Currently the `Messages` page doesn't display the comments made individually on each dog. It returns ``undefined`` for the dogId which is quite frustrating taking into account the code is quite similar to the method of passing down the ID from the ``dog to dog/dogId`` pages.
 
 
   
