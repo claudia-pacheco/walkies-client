@@ -38,7 +38,7 @@ The functionality of Walkies includes:
 - Message the dog's owner to arrange `walkies`!
 
 
-### Planning 
+## Planning 
 
 
 ![Untitled-2022-03-31-0020](https://user-images.githubusercontent.com/75817925/161280307-a79a28e1-e83e-4cd6-bba9-64ae7e568f6b.png)
@@ -48,15 +48,15 @@ A big part of our planning as well as process was using Trello for organisation 
 
 ![Untitled](https://user-images.githubusercontent.com/75817925/161281508-a9f4ac23-2d69-4140-9ad3-8ea52729a37d.png)
 
-### Build
+## Build
 
 Group project | Timeframe: 2 weeks
 
 The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and we stored our data on the MongoDB Atlas cloud at the end of week one. We started by building our backend/API together as a team, we utilised VScode LiveShare and we pushed to the same main branch during this week. During week two, we switched up our workflow, and started using our own Git branches, the reason for this was because on the frontend we split up individual tasks/components, whereas the backend was built together. 
 
-#### Backend 
+### Backend 
 
-Our backend and client were split up in two seperate files and were two seperate Git repositories. We built a CRUD API to let users create dogs/users and to store our User and Dog data. During our process, we didn't use dummy data - rather we opted to upload testing data via apps like Insomnia or Postman. Our backend consists of User schema, Dog schema, middleware for authorization and error handling, a router, and of course, controllers - which held the functions and logic for our API to work. For example: 
+Our [backend](https://github.com/claudia-pacheco/walkies-backend) and client were split up in two seperate files and were two seperate Git repositories. We built a CRUD API to let users create dogs/users and to store our User and Dog data. During our process, we didn't use dummy data - rather we opted to upload testing data via apps like Insomnia or Postman. Our backend consists of User schema, Dog schema, middleware for authorization and error handling, a router, and of course, controllers - which held the functions and logic for our API to work. For example: 
 
 ```
 // create / list your dog
@@ -113,6 +113,20 @@ router.route("/messages/:dogId")
           console.log(`doggo data: `);
           console.log(response.data)
   ```
+Once we were able to successfully fetch data from the API, we delegated tasks so we could work on different things in individual branches. I was assigned the ```Register, Messages and Dog (Individual)``` pages.
+
+<img width="406" alt="Screenshot 2022-06-10 at 15 32 34" src="https://user-images.githubusercontent.com/94257616/173088443-aae7077a-0803-491d-a282-9f8df9330f41.png">
+
+I started by creating a form where the input data is handled by the ```onChange``` event and populates the corresponding labelled data in the API.
+
+<img width="407" alt="Screenshot 2022-06-10 at 15 34 38" src="https://user-images.githubusercontent.com/94257616/173088889-7e8664ab-95a9-4858-b187-8c72e0b31b5d.png">
+
+This was data was then handled by the ``onSubmit`` function incorporated in the form.
+
+<img width="569" alt="Screenshot 2022-06-10 at 15 36 41" src="https://user-images.githubusercontent.com/94257616/173089340-ff4c9391-2eb1-4267-8bc9-de1825b51f72.png">
+
+The function uses ``axios`` to create a POST request to the API so the new user is added. The user is then created in the API and once they login, a access token is generated.
+
 
 ### Styling
 
