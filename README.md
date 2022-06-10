@@ -23,7 +23,9 @@ This project was built for project three of General Assembly's Full-Stack Softwa
 
 ## Tech stack
 
-### Project aim 
+The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and we stored our data on the MongoDB Atlas cloud.
+
+## Project aim 
 
 Walkies is a dog borrowing site, inspired by [borrow my doggy](https://www.borrowmydoggy.com/).
 
