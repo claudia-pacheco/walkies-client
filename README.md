@@ -21,6 +21,8 @@ This project was built for project three of General Assembly's Full-Stack Softwa
 6. Key Learnings
 7. Future improvements
 
+## Tech stack
+
 ### Project aim 
 
 Walkies is a dog borrowing site, inspired by [borrow my doggy](https://www.borrowmydoggy.com/).
@@ -45,6 +47,8 @@ A big part of our planning as well as process was using Trello for organisation 
 ![Untitled](https://user-images.githubusercontent.com/75817925/161281508-a9f4ac23-2d69-4140-9ad3-8ea52729a37d.png)
 
 ### Build
+
+Group project | Timeframe: 2 weeks
 
 The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and we stored our data on the MongoDB Atlas cloud at the end of week one. We started by building our backend/API together as a team, we utilised VScode LiveShare and we pushed to the same main branch during this week. During week two, we switched up our workflow, and started using our own Git branches, the reason for this was because on the frontend we split up individual tasks/components, whereas the backend was built together. 
 
