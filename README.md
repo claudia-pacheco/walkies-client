@@ -1,8 +1,8 @@
-## Walkies - Group Project
+## Project 3 - Walkies 
 
-Deployed at: https://walkiessei22.netlify.app/
+This project was lovingly made by [Ava](https://github.com/avayazdan), [Claudia](https://github.com/claudia-pacheco) and [Laura](https://github.com/laura-arch) as part of our Software Engineering Flex course at General Assembly.
 
-This project was lovingly made by [Ava](https://github.com/avayazdan), [Claudia](https://github.com/claudiatmcp) and [Laura](https://github.com/laura-arch).
+Deployed [here.](https://walkiessei22.netlify.app/)
 
 ![kdds](https://user-images.githubusercontent.com/75817925/161390251-1b84f54d-4aca-49df-8641-3e7da6242542.png)
 
@@ -18,11 +18,12 @@ This project was built for project three of General Assembly's Full-Stack Softwa
 3. Build
 4. Styling
 5. Challenges and Wins
-6. Future improvements
+6. Key Learnings
+7. Future improvements
 
 ### Project aim 
 
-Walkies is a dog borrowing site, inspired by www.borrowmydoggy.com
+Walkies is a dog borrowing site, inspired by [borrow my doggy](https://www.borrowmydoggy.com/).
 
 The functionality of Walkies includes:
 
