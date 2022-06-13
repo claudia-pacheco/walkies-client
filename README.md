@@ -39,7 +39,7 @@ Group project | Timeframe: 2 weeks
 The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and the data was stored on the MongoDB Atlas cloud. 
 
 We decided to build the backend together so we could solidify our knowledge with MongoDB. We used the Live Share option on Visual Studio to code along.
-Once we had our Backend completed, we delegated tasks to eachother so we could work on individual Git branches on different components.
+Once we had our Backend completed, we delegated tasks to eachother so we could work on individual Git branches on different components. I was assigned the ```Register, Messages and Dog (Individual)``` pages.
 
 The project was split into 2 different Git repositories. Please refer to the backend code [here](https://github.com/claudia-pacheco/walkies-backend).
 
@@ -55,8 +55,6 @@ We stayed on track with our wireframe and created a User and Dog Schema.
 <img width="489" alt="Screenshot 2022-06-10 at 16 58 07" src="https://user-images.githubusercontent.com/94257616/173105607-02324bcb-aa41-4c4c-8c8d-5d3664d29618.png">
 
 The use of Mongoose made it easier and neat to link Schemas. For example, we have linked our User schema to the Dog one by referencing the object ID ``type: mongoose.Schema.ObjectId`` to the model ``User``. This way when a dog is created, it will be linked to the owner. This works great in terms of authorisation as it is simple to connect them.
-
- 
 
 
   #### Frontend 
@@ -109,12 +107,11 @@ Another win was playing around with ``useParams`` and ``LocalStorage``. For the 
 
 At the beginning we had lots of bugs trying to feed the data into the MongoDB Atlas cloud so we could all work on different devices with the same data. It tooks us a few moments to realise how to properly connect it, but once we figured it out we used the cloud throughout the whole project!
 
-We had a few challenges - such as connecting to MongoDB, deploying our backend without errors and finally (arguably the largest one) uploading our dog data via the frontend to the database successfully. Luckily we had the help of our tutors but we always tried to work on the problem for a couple of hours before asking for help. 
 
 I had quite a lot of trouble to initially grab a specific ID from a different component. I kept getting ``undefined`` on the console so it was very pleasant when ``useParams`` worked.
 I wish I had spent some time on styling as I feel like I haven't contributed as much as I would like to.
 
-### Future Improvements
+## Future Improvements
 
 Features to add:
 
