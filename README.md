@@ -137,7 +137,3 @@ Features to add:
 Bugs to fix:
 
 - Currently the `Messages` page doesn't display the comments made individually on each dog. It returns ``undefined`` for the dogId which is quite frustrating taking into account the code is quite similar to the method of passing down the ID from the ``dog to dog/dogId`` pages.
-
-
-  
-
