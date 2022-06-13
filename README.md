@@ -106,19 +106,21 @@ I had to deconstruct the `dogId` object so I could easily access the value and u
 
 ## Styling
 
-Our styling was inspired by colourful and animated websites surrounding our chosen topic. We wanted to make it look modern and easy-to-read. One interesting aspect of our project was that we opted out of using stock photos to using photos of family/friends and ourselves in the Community Stories section in our home page, which subsequently gives our project a more personalised feel. Originally, we had planned to use a styling library, however underestimated how complicated they can actually get! So ultimately we opted for vanilla CSS as to save us some time. For future projects we would aim to implement a styling library for learning and experience purposes. 
+We decided to go for bright colours and use pictures of our family/friends for the Community Stories section. This way our project feels more personalised and intimate. Initially, we were thinking to use a styling library however, we soon realised they were more coplicated than we anticipated! Therefore, we decided to go with vanilla CSS to save us some time. Hopefully in the next projects/future we will be able to work with one.
 
 
 ## Challenges and Wins
 
 ### Wins
 
-One of our wins was working efficiently as a team, organising effectively and utilising the tools available to us effectively. Another win was accepting kind critisim from each other on small things that we may have different opinions on, we listened to eachother with respect and no one overuled one another, it could even be argued that we mastered the skill of working efficiently as a team in a short amount of time! Speaking of time - that was another win of ours. We moved with quick pacing fromt the very get go and that could also be down to our efficient organisation methods and skills. 
+One of our greatest wins was working successfully as a team and organising our work through Trello boards. This helped us to stay on track with every task that needed to be completed. We kindly accepeted constructive criticism and shared ideas with each other in order to reach the best results possible.
 
 A personal win was definitely succesfully feed data into our API from the Register form. This was a new concept for me as previously we had an external API so it was really cool to have our own and it working successfully. 
 Another win was playing around with ``useParams`` and ``LocalStorage``. For the most part, it was successful and we were able to retrieve the correct information without having to place different fetch requests.
 
 ### Challenges 
+
+At the beggining we had lots of bugs trying to feed the data into the MongoDB Atlas cloud so we could all work on different devices with the same data. It tooks us a few moments to realise how to properly connect it, but once we figured it out we used the cloud throughout the whole project!
 
 We had a few challanges - such as connecting to MongoDB, deploying our backend without errors and finally (arguably the largest one) uploading our dog data via the frontend to the database successfully. Luckily we had the help of our tutors but we always tried to work on the problem for a couple of hours before asking for help. 
 
@@ -129,8 +131,8 @@ I wish I had spent some time on styling as I feel like I haven't contributed as 
 
 Features to add:
 
-- Favorites page would be a great addition to our project (adding a dog or a borrower to your favorites, storing them for later)
-- Implementing a chat messenger where users can interact with eachother in real time, or to get an inbox functionality between owners and borrowers
+- Adding a Dogs favourites page 
+- Implementing a successful chat/inbox messaging system between users
 
 Bugs to fix:
 
