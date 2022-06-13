@@ -47,6 +47,10 @@ The project was split into 2 different Git repositories. Please refer to the bac
 
 We built a CRUD API to let users (owners) create a profile for their dogs and Borrowers to message Owners about a specific dog to walk. Throughtout the project we didn't seed data, we opted to test it through Postman/Insomnia.
 
+<img width="426" alt="Screenshot 2022-06-13 at 13 54 51" src="https://user-images.githubusercontent.com/94257616/173358447-9e6ca2b4-0899-4e08-8255-b35a9a50ce68.png">
+
+For instance, if you wanted to create a `Dog`, you would have to be a `owner` - meaning if your role was `borrower` you'd be unauthorized to do so. Should the check be successful, your dog would be created under your user profile.
+
 We stayed on track with our wireframe and created a User and Dog Schema.
 <img width="489" alt="Screenshot 2022-06-10 at 16 58 07" src="https://user-images.githubusercontent.com/94257616/173105607-02324bcb-aa41-4c4c-8c8d-5d3664d29618.png">
 
