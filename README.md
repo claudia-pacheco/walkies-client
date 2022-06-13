@@ -56,23 +56,6 @@ The use of Mongoose made it easier and neat to link Schemas. For example, we hav
 
 
   #### Frontend 
-  
-  As this is a React app, we followed the methodology and popular conventions of React apps - such as creating **src** folders and **components**. We first began by creating all of our needed components as well as our **App** and **Index** **.js**. We also used **axios** for fetching our API data. 
- 
-   ```
-   axios({
-          method: 'get',
-          url: 'https://walkies-backend.herokuapp.com/dogs',
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          }
-        })
-        .then(response => {
-          // Console logging the data
-          console.log(`doggo data: `);
-          console.log(response.data)
-  ```
-Once we were able to successfully fetch data from the API, we delegated tasks so we could work on different things in individual branches. I was assigned the ```Register, Messages and Dog (Individual)``` pages.
 
 <img width="406" alt="Screenshot 2022-06-10 at 15 32 34" src="https://user-images.githubusercontent.com/94257616/173088443-aae7077a-0803-491d-a282-9f8df9330f41.png">
 
