@@ -22,7 +22,7 @@ The project aim was to build a Full Stack MERN app that consumes its own RESTful
 
 ## Tech stack
 
-The project utilises React, HTML and CSS. As well as MongoDB, NPM and Mongoose. We used Insomnia and Postman to test our API's data and we stored our data on the MongoDB Atlas cloud.
+The project utilises React, HTML and CSS, MongoDB, NPM, Mongoose and MongoDB Atlas cloud. Tested on Insomnia and Postman.
 
 
 ## Planning 
